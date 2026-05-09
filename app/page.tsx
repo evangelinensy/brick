@@ -55,14 +55,14 @@ const recentActivity = [
     amount: -15.49,
   },
   {
-    icon: <MerchantBadge letter="S" bg="bg-[#3a40c4]" />,
+    icon: <MerchantLogo src="/merchants/starbucks.png" alt="Starbucks" />,
     title: 'SBUX-8821 STARBUCKS',
     category: 'Coffee',
     time: '2 days ago',
     amount: -5.75,
   },
   {
-    icon: <MerchantBadge letter="S" bg="bg-[#3a40c4]" />,
+    icon: <MerchantLogo src="/merchants/starbucks.png" alt="Starbucks" />,
     title: 'STARBUCKS #6677',
     category: 'Coffee',
     time: '3 days ago',
