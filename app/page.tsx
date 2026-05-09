@@ -22,6 +22,12 @@ const MerchantBadge = ({ letter, bg }: { letter: string; bg: string }) => (
   </div>
 )
 
+const MerchantLogo = ({ src, alt }: { src: string; alt: string }) => (
+  <div className="w-9 h-9 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-white/10 bg-white">
+    <img src={src} alt={alt} className="w-full h-full object-cover" />
+  </div>
+)
+
 const quickActions = [
   { icon: ArrowLeftRight, title: 'Transfer', description: 'Send money' },
   { icon: Landmark, title: 'Pay', description: 'Bills & payments' },
@@ -35,14 +41,14 @@ const quickActions = [
 // Plaid's Smart Categorize API).
 const recentActivity = [
   {
-    icon: <MerchantBadge letter="W" bg="bg-[#00a87e]" />,
+    icon: <MerchantLogo src="/merchants/whole-foods.png" alt="Whole Foods Market" />,
     title: 'WFM #00482',
     category: 'Groceries',
     time: '2 hours ago',
     amount: -84.32,
   },
   {
-    icon: <MerchantBadge letter="N" bg="bg-[#e61e49]" />,
+    icon: <MerchantLogo src="/merchants/netflix.png" alt="Netflix" />,
     title: 'NETFLIX.COM',
     category: 'Subscription',
     time: '1 day ago',
