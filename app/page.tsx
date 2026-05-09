@@ -127,7 +127,7 @@ export default function Home() {
         <FinancialDashboard
           quickActions={quickActions}
           recentActivity={recentActivity}
-          financialServices={financialServices}
+          financialServices={[]}
         />
 
         {/* CTA */}

@@ -159,7 +159,8 @@ export function FinancialDashboard({
           </motion.ul>
         </motion.div>
 
-        {/* Financial services */}
+        {/* Financial services — only renders if there are items to show */}
+        {financialServices.length > 0 && (
         <motion.div variants={itemVariants}>
           <div className="flex items-center gap-2 mb-3">
             <Library className="w-4 h-4 text-white/50" />
@@ -194,6 +195,7 @@ export function FinancialDashboard({
             ))}
           </motion.div>
         </motion.div>
+        )}
       </div>
     </motion.div>
   )
