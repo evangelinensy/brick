@@ -93,14 +93,17 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <div className="max-w-2xl mx-auto px-5 py-10 md:py-14 space-y-8">
-        {/* Brand header */}
-        <header className="text-center space-y-1.5">
-          <h1 className="text-3xl font-semibold tracking-tight">
+        {/* Brand header — logo left, tagline right */}
+        <header className="flex items-center gap-3">
+          <h1 className="text-2xl font-semibold tracking-tight leading-none">
             <span className="bg-gradient-to-r from-[#a8aef5] via-[#4f55f1] to-[#494fdf] bg-clip-text text-transparent">
               Brick
             </span>
           </h1>
-          <p className="text-sm text-white/55">The AI that watches your money</p>
+          <span className="h-5 w-px bg-white/15" aria-hidden />
+          <p className="text-sm text-white/55 leading-tight">
+            AI that finds you best deals &amp; cards &amp; subscriptions
+          </p>
         </header>
 
         {/* Hero stat */}
