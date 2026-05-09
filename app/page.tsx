@@ -117,7 +117,7 @@ export default function Home() {
             Saved this year
           </p>
           <p className="text-7xl md:text-8xl font-semibold leading-none tracking-tight">
-            <span className="bg-gradient-to-br from-[#a8aef5] via-[#4f55f1] to-[#00a87e] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-b from-white via-white to-neutral-400/70 bg-clip-text text-transparent">
               $3,847
             </span>
           </p>
