@@ -93,8 +93,8 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-white">
       <div className="max-w-2xl mx-auto px-5 py-10 md:py-14 space-y-8">
-        {/* Brand header — logo left, tagline right */}
-        <header className="flex items-center gap-3">
+        {/* Brand header — centered: logo + divider + tagline */}
+        <header className="flex items-center justify-center gap-3">
           <h1 className="text-2xl font-semibold tracking-tight leading-none">
             <span className="bg-gradient-to-r from-[#a8aef5] via-[#4f55f1] to-[#494fdf] bg-clip-text text-transparent">
               Brick
