@@ -29,27 +29,38 @@ const quickActions = [
   { icon: CreditCard, title: 'Cards', description: 'Manage cards' },
 ]
 
+// Raw merchant strings — what Plaid actually returns before enrichment.
+// The two Starbucks transactions look like different merchants here, which is
+// the visible problem the code agent's PR fixes (delete the regex, switch on
+// Plaid's Smart Categorize API).
 const recentActivity = [
   {
     icon: <MerchantBadge letter="W" bg="bg-[#00a87e]" />,
-    title: 'Whole Foods Market',
+    title: 'WFM #00482',
     category: 'Groceries',
     time: '2 hours ago',
     amount: -84.32,
   },
   {
     icon: <MerchantBadge letter="N" bg="bg-[#e61e49]" />,
-    title: 'Netflix',
+    title: 'NETFLIX.COM',
     category: 'Subscription',
     time: '1 day ago',
-    amount: -15.99,
+    amount: -15.49,
   },
   {
     icon: <MerchantBadge letter="S" bg="bg-[#3a40c4]" />,
-    title: 'Starbucks',
+    title: 'SBUX-8821 STARBUCKS',
     category: 'Coffee',
     time: '2 days ago',
-    amount: -5.45,
+    amount: -5.75,
+  },
+  {
+    icon: <MerchantBadge letter="S" bg="bg-[#3a40c4]" />,
+    title: 'STARBUCKS #6677',
+    category: 'Coffee',
+    time: '3 days ago',
+    amount: -6.5,
   },
 ]
 
